@@ -4,7 +4,7 @@ import {
   MessageSquare, 
   FileText, 
   Image, 
-  FilePdf, 
+  FileDown,
   CheckCircle2,
   ArrowRight
 } from "lucide-react";
@@ -27,7 +27,7 @@ const ProcessSection: React.FC = () => {
       description: "The AI creates a vibrant, colorful cover page with your book title integrated."
     },
     {
-      icon: <FilePdf className="w-8 h-8 text-cyberpunk-purple" />,
+      icon: <FileDown className="w-8 h-8 text-cyberpunk-purple" />,
       title: "Build Your Book",
       description: "Page by page, the AI generates professional black & white illustrations optimized for coloring."
     },
