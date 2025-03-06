@@ -1,0 +1,40 @@
+
+/* Critical CSS for initial render */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0D0D1A; /* cyberpunk-darker */
+  color: white;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic loader animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.initial-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.initial-loader::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 4px solid #9b87f5;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}

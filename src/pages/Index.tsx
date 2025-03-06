@@ -1,5 +1,5 @@
 
-import React, { useRef } from "react";
+import React, { useCallback } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProcessSection from "@/components/ProcessSection";
@@ -9,18 +9,19 @@ import DisclaimerSection from "@/components/DisclaimerSection";
 import Footer from "@/components/Footer";
 
 const Index: React.FC = () => {
-  const scrollToSection = (sectionId: string) => {
+  // Memoize the scrollToSection function to prevent unnecessary re-renders
+  const scrollToSection = useCallback((sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
   return (
-    <div className="min-h-screen bg-cyberpunk-darker text-white overflow-x-hidden">
+    <div className="flex min-h-screen flex-col bg-cyberpunk-darker text-white">
       <Header scrollToSection={scrollToSection} />
       
-      <main>
+      <main className="flex-grow">
         <HeroSection />
         <ProcessSection />
         <TestimonialsSection />
