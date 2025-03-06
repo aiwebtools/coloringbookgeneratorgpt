@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Book, Palette, BookOpen } from "lucide-react";
+import { Book, Palette, BookOpen, Sparkles } from "lucide-react";
 
 const HeroSection: React.FC = () => {
   return (
@@ -73,7 +73,18 @@ const HeroSection: React.FC = () => {
               
               {/* Decorative elements */}
               <div className="absolute -top-10 -right-10 w-20 h-20 bg-cyberpunk-pink/30 rounded-full blur-xl animate-pulse-glow"></div>
-              <div className="absolute -bottom-5 -left-5 w-16 h-16 bg-cyberpunk-blue/30 rounded-full blur-xl animate-pulse-glow"></div>
+              
+              {/* New feature badge that's visible and useful */}
+              <div className="absolute -bottom-5 -left-5 flex items-center justify-center">
+                <div className="relative p-2 rounded-full bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple animate-float-fast shadow-neon-blue">
+                  <div className="bg-cyberpunk-darker p-1 rounded-full">
+                    <div className="flex items-center gap-1 bg-cyberpunk-darker/80 backdrop-blur-sm px-3 py-2 rounded-full border border-white/10">
+                      <Sparkles className="w-4 h-4 text-cyberpunk-blue" />
+                      <span className="text-xs font-medium text-white">New Styles Added!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             
             {/* Features list */}
