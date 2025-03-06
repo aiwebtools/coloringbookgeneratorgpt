@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -45,7 +44,8 @@
   }
   
   body {
-    @apply bg-cyberpunk-darker text-foreground antialiased overflow-x-hidden;
+    @apply bg-cyberpunk-darker text-foreground antialiased;
+    color: white; /* Explicit color declaration */
   }
 
   html {
@@ -147,4 +147,22 @@
   .animate-delay-800 {
     animation-delay: 0.8s;
   }
+}
+
+/* Add animation keyframes for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ensure the root div takes full height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add explicit styling for the main container */
+.min-h-screen {
+  min-height: 100vh;
 }
