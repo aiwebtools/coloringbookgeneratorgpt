@@ -49,6 +49,13 @@ const DisclaimerSection: React.FC = () => {
             </div>
             
             <div className="glass-card p-4 rounded-xl">
+              <h4 className="text-white font-medium mb-2">Image Quality Disclaimer</h4>
+              <p className="text-sm">
+                Please note that image quality is random and may vary based on DALLE's actions. There are no guarantees of specific quality levels for generated images. The quality, style, and appearance of coloring book pages may differ between generations and we cannot guarantee consistency across all pages or books.
+              </p>
+            </div>
+            
+            <div className="glass-card p-4 rounded-xl">
               <h4 className="text-white font-medium mb-2">No Warranty</h4>
               <p className="text-sm">
                 The Coloring Book Generator is provided "as is" without warranties of any kind, either expressed or implied. We do not guarantee uninterrupted service, and the quality of generated content may vary.
