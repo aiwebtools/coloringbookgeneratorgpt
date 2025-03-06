@@ -74,16 +74,21 @@ const HeroSection: React.FC = () => {
               {/* Decorative elements */}
               <div className="absolute -top-10 -right-10 w-20 h-20 bg-cyberpunk-pink/30 rounded-full blur-xl animate-pulse-glow"></div>
               
-              {/* Updated badge with new text */}
+              {/* Updated badge with new text - now clickable */}
               <div className="absolute -bottom-5 -left-5 flex items-center justify-center">
-                <div className="relative p-2 rounded-full bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple animate-float-fast shadow-neon-blue">
+                <a 
+                  href="https://chatgpt.com/g/g-H1TU1oFRy-coloring-book-generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative p-2 rounded-full bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple animate-float-fast shadow-neon-blue cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300"
+                >
                   <div className="bg-cyberpunk-darker p-1 rounded-full">
                     <div className="flex items-center gap-1 bg-cyberpunk-darker/80 backdrop-blur-sm px-3 py-2 rounded-full border border-white/10">
                       <Sparkles className="w-4 h-4 text-cyberpunk-blue" />
                       <span className="text-xs font-medium text-white">Make A Coloring Book Free</span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             
