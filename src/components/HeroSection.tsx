@@ -74,7 +74,7 @@ const HeroSection: React.FC = () => {
               {/* Decorative elements */}
               <div className="absolute -top-10 -right-10 w-20 h-20 bg-cyberpunk-pink/30 rounded-full blur-xl animate-pulse-glow"></div>
               
-              {/* Updated badge with new text - now clickable with reduced animation */}
+              {/* Updated badge with new text - clickable with reduced animation */}
               <div className="absolute -bottom-5 -left-5 flex items-center justify-center">
                 <a 
                   href="https://chatgpt.com/g/g-H1TU1oFRy-coloring-book-generator"
