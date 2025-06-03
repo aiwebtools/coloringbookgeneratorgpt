@@ -14,16 +14,16 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 justify-between">
           <div className="lg:w-1/2 space-y-6 opacity-0 animate-fade-in">
             <div className="inline-block px-3 py-1 bg-cyberpunk-purple/20 backdrop-blur-sm border border-cyberpunk-purple/30 rounded-full">
-              <p className="text-sm font-medium text-white">Powered by GPT-4o and DALLE</p>
+              <p className="text-sm font-medium text-white">Free AI Tools by AiWebTools.Ai • Powered by GPT-4o and DALLE</p>
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient-primary leading-tight">
-              Create Beautiful <br />Coloring Books <br />with AI
+              Free AI Coloring <br />Book Generator <br />by AiWebTools.Ai
             </h2>
             
             <p className="text-lg text-gray-300 max-w-xl">
-              Transform your ideas into professional coloring books in minutes. 
-              Perfect for artists, educators, parents, and creative minds.
+              Create beautiful custom coloring books instantly with our free AI tools. 
+              Perfect for educators, parents, artists, and creative minds. The best free AI coloring book generator available.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-2">
@@ -32,15 +32,25 @@ const HeroSection: React.FC = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="cta-button"
+                title="Create Free AI Coloring Book - Best AI Tools"
               >
-                Create Your Coloring Book
+                Create Free AI Coloring Book
               </a>
               <a 
                 href="#how-it-works" 
                 className="py-4 px-8 rounded-full bg-white/5 border border-white/10 font-medium text-white hover:bg-white/10 transition-all duration-300"
+                title="Learn How Our Free AI Tools Work"
               >
                 Learn More
               </a>
+            </div>
+            
+            {/* SEO-friendly keyword-rich text */}
+            <div className="text-sm text-gray-400 mt-4">
+              <p>
+                <strong>Best Free AI Tools for Education:</strong> AiWebTools.Ai offers professional AI coloring book generators, 
+                AI art tools, and educational AI applications. Create unlimited custom coloring books with our advanced artificial intelligence technology.
+              </p>
             </div>
           </div>
           
@@ -55,8 +65,8 @@ const HeroSection: React.FC = () => {
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-center">
                             <BookOpen className="w-20 h-20 text-white mx-auto mb-4" />
-                            <h3 className="text-2xl font-bold text-white">Cyberpunk Crayons</h3>
-                            <p className="text-white/80 mt-2">Coloring Adventure</p>
+                            <h3 className="text-2xl font-bold text-white">AI Coloring Adventures</h3>
+                            <p className="text-white/80 mt-2">Created with Free AI Tools</p>
                           </div>
                         </div>
                       </div>
@@ -74,41 +84,42 @@ const HeroSection: React.FC = () => {
               {/* Decorative elements */}
               <div className="absolute -top-10 -right-10 w-20 h-20 bg-cyberpunk-pink/30 rounded-full blur-xl animate-pulse-glow"></div>
               
-              {/* Updated badge with new text - clickable with reduced animation */}
+              {/* Updated badge with SEO-friendly text */}
               <div className="absolute -bottom-5 -left-5 flex items-center justify-center">
                 <a 
                   href="https://chatgpt.com/g/g-H1TU1oFRy-coloring-book-generator"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative p-2 rounded-full bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple shadow-neon-blue cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  title="Free AI Coloring Book Generator - AiWebTools.Ai"
                 >
                   <div className="bg-cyberpunk-darker p-1 rounded-full">
                     <div className="flex items-center gap-1 bg-cyberpunk-darker/80 backdrop-blur-sm px-3 py-2 rounded-full border border-white/10">
                       <Sparkles className="w-4 h-4 text-cyberpunk-blue" />
-                      <span className="text-xs font-medium text-white">Make A Coloring Book Free</span>
+                      <span className="text-xs font-medium text-white">Free AI Tools</span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
             
-            {/* Features list */}
+            {/* Features list with SEO keywords */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
               {[
                 {
                   icon: <Book className="w-5 h-5 text-cyberpunk-pink" />,
-                  title: "Custom Coloring Books",
-                  description: "Create perfectly tailored coloring books for any theme."
+                  title: "Custom AI Coloring Books",
+                  description: "Create perfectly tailored coloring books with our free AI tools for any theme or style."
                 },
                 {
                   icon: <Palette className="w-5 h-5 text-cyberpunk-purple" />,
-                  title: "AI Artwork",
-                  description: "Generate professional illustrations with cutting-edge AI."
+                  title: "AI Art Generator",
+                  description: "Generate professional illustrations with cutting-edge AI technology, completely free."
                 },
                 {
                   icon: <BookOpen className="w-5 h-5 text-cyberpunk-blue" />,
-                  title: "PDF Ready",
-                  description: "Download print-ready PDFs that work instantly."
+                  title: "PDF Ready AI Tools",
+                  description: "Download print-ready PDFs instantly with our advanced AI web tools."
                 }
               ].map((feature, index) => (
                 <div 

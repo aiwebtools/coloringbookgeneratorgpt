@@ -15,26 +15,29 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
       
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10">
-          {/* Column 1 - About */}
+          {/* Column 1 - About with SEO content */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <div className="relative w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-cyberpunk-purple to-cyberpunk-pink">
                 <PencilRuler className="w-6 h-6 text-white" />
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyberpunk-purple to-cyberpunk-pink opacity-50 blur-sm"></div>
               </div>
-              <h3 className="font-heading font-bold text-xl text-white">Coloring Book Generator</h3>
+              <h3 className="font-heading font-bold text-xl text-white">AiWebTools.Ai</h3>
             </div>
             <p className="text-gray-400 mb-4 text-sm">
-              Create beautiful, customized coloring books in minutes with our advanced AI technology.
+              The #1 source for free AI tools and AI web applications. Create beautiful, customized coloring books and more with our advanced AI technology.
+            </p>
+            <p className="text-sm text-gray-400 mb-2">
+              <strong>Best Free AI Tools:</strong> AI Coloring Book Generator, AI Art Tools, Educational AI Applications
             </p>
             <p className="text-sm text-gray-400">
-              Powered by GPT-4o and DALLE
+              Powered by GPT-4o and DALLE • 100% Free AI Tools
             </p>
           </div>
           
-          {/* Column 2 - Quick Links */}
+          {/* Column 2 - Quick Links with SEO titles */}
           <div className="md:col-span-1">
-            <h3 className="font-semibold text-white mb-6">Quick Links</h3>
+            <h3 className="font-semibold text-white mb-6">Free AI Tools</h3>
             <ul className="space-y-3">
               <li>
                 <a 
@@ -42,8 +45,9 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors flex items-center gap-2"
+                  title="Free AI Coloring Book Generator - Best AI Tools"
                 >
-                  <span>Generate a Coloring Book</span>
+                  <span>AI Coloring Book Generator</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -51,16 +55,18 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                 <button 
                   onClick={() => scrollToSection("faq")}
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors"
+                  title="FAQ about Free AI Tools"
                 >
-                  FAQ
+                  AI Tools FAQ
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection("disclaimer")}
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors"
+                  title="AI Tools Usage Disclaimer"
                 >
-                  Disclaimer
+                  AI Tools Disclaimer
                 </button>
               </li>
               <li>
@@ -69,8 +75,9 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors flex items-center gap-2"
+                  title="AiWebTools.Ai - More Free AI Tools and AI Web Applications"
                 >
-                  <span>More AI Tools</span>
+                  <span>More Free AI Web Tools</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -79,7 +86,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
           
           {/* Column 3 - Legal */}
           <div className="md:col-span-1">
-            <h3 className="font-semibold text-white mb-6">Legal</h3>
+            <h3 className="font-semibold text-white mb-6">Legal & Support</h3>
             <ul className="space-y-3">
               <li>
                 <a 
@@ -87,6 +94,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors flex items-center gap-2"
+                  title="AI Tools Privacy Policy"
                 >
                   <span>Privacy Policy</span>
                   <ExternalLink className="w-3 h-3" />
@@ -98,6 +106,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors flex items-center gap-2"
+                  title="AiWebTools.Ai Terms of Service"
                 >
                   <span>Terms of Service</span>
                   <ExternalLink className="w-3 h-3" />
@@ -108,12 +117,13 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
           
           {/* Column 4 - Contact */}
           <div className="md:col-span-1">
-            <h3 className="font-semibold text-white mb-6">Contact Us</h3>
+            <h3 className="font-semibold text-white mb-6">Contact AI Web Tools</h3>
             <ul className="space-y-3">
               <li>
                 <a 
                   href="tel:4758008096" 
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors flex items-center gap-2"
+                  title="Call AiWebTools.Ai Support"
                 >
                   <Phone className="w-4 h-4" />
                   <span>(475) 800-8096</span>
@@ -123,6 +133,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                 <a 
                   href="mailto:Contact@ai-webtools.com" 
                   className="text-gray-400 hover:text-cyberpunk-purple transition-colors flex items-center gap-2"
+                  title="Email AiWebTools.Ai for AI Tools Support"
                 >
                   <Mail className="w-4 h-4" />
                   <span>Contact@ai-webtools.com</span>
@@ -139,46 +150,58 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
             target="_blank" 
             rel="noopener noreferrer"
             className="absolute right-0 bottom-10 glass-card px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 border border-white/20 flex items-center gap-2"
+            title="Discover More Free AI Tools at AiWebTools.Ai"
           >
-            <span className="text-white font-medium">More AI Tools</span>
+            <span className="text-white font-medium">Explore More AI Tools</span>
             <ExternalLink className="w-4 h-4 text-cyberpunk-pink" />
           </a>
         </div>
         
-        {/* Bottom copyright */}
+        {/* Bottom copyright with SEO content */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <a 
-            href="https://www.aiwebtools.ai" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-gray-400 text-sm"
-          >
-            © 2025 AI WEB TOOLS LLC. All rights reserved.
-          </a>
+          <div className="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
+            <a 
+              href="https://www.aiwebtools.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-cyberpunk-purple transition-colors"
+              title="AiWebTools.Ai - Leading Provider of Free AI Tools"
+            >
+              © 2025 AI WEB TOOLS LLC - AiWebTools.Ai
+            </a>
+            <br className="md:hidden" />
+            <span className="hidden md:inline"> • </span>
+            <span>Leading Provider of Free AI Tools & AI Web Applications</span>
+          </div>
           
-          <div className="flex gap-4 mt-4 md:mt-0">
+          <div className="flex gap-4 flex-wrap justify-center">
             <a 
               href="https://chatgpt.com/g/g-H1TU1oFRy-coloring-book-generator" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-cyberpunk-purple text-sm transition-colors"
+              title="Free AI Coloring Book Generator"
             >
-              Generate a Coloring Book Now
+              AI Coloring Book Generator
             </a>
             <span className="text-gray-600">|</span>
             <button 
               onClick={() => scrollToSection("faq")}
               className="text-gray-400 hover:text-cyberpunk-purple text-sm transition-colors"
+              title="AI Tools FAQ"
             >
-              FAQ
+              AI Tools FAQ
             </button>
             <span className="text-gray-600">|</span>
-            <button 
-              onClick={() => scrollToSection("disclaimer")}
+            <a 
+              href="https://www.aiwebtools.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-cyberpunk-purple text-sm transition-colors"
+              title="More Free AI Tools by AiWebTools.Ai"
             >
-              Disclaimer
-            </button>
+              More AI Tools
+            </a>
           </div>
         </div>
       </div>
