@@ -16,7 +16,7 @@ const FaqSection: React.FC = () => {
   const faqs = [
     {
       question: "How does the Coloring Book Generator work?",
-      answer: "The Coloring Book Generator uses advanced AI models (GPT-4o and DALLE) to create custom coloring books. You describe your vision, the AI creates an outline, generates a colorful cover with your title, and then produces black and white coloring pages. Finally, it compiles everything into a print-ready PDF."
+      answer: "The Coloring Book Generator uses advanced AI models with GPT-5 Image Generation to create custom coloring books. You describe your vision, the AI creates an outline, generates a colorful cover with your title, and then produces black and white coloring pages. Finally, it compiles everything into a print-ready PDF."
     },
     {
       question: "How many pages can I include in my coloring book?",

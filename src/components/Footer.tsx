@@ -31,7 +31,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
               <strong>Best Free AI Tools:</strong> AI Coloring Book Generator, AI Art Tools, Educational AI Applications
             </p>
             <p className="text-sm text-gray-400">
-              Powered by GPT-4o and DALLE • 100% Free AI Tools
+              Powered by GPT-5 Image Generation • 100% Free AI Tools
             </p>
           </div>
           

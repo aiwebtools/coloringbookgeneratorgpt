@@ -51,7 +51,7 @@ const DisclaimerSection: React.FC = () => {
             <div className="glass-card p-4 rounded-xl">
               <h4 className="text-white font-medium mb-2">Image Quality Disclaimer</h4>
               <p className="text-sm">
-                Please note that image quality is random and may vary based on DALLE's actions. There are no guarantees of specific quality levels for generated images. The quality, style, and appearance of coloring book pages may differ between generations and we cannot guarantee consistency across all pages or books.
+                Please note that image quality is random and may vary based on GPT-5's image generation. There are no guarantees of specific quality levels for generated images. The quality, style, and appearance of coloring book pages may differ between generations and we cannot guarantee consistency across all pages or books.
               </p>
             </div>
             

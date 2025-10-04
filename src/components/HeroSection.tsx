@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 justify-between">
           <div className="lg:w-1/2 space-y-6 opacity-0 animate-fade-in">
             <div className="inline-block px-3 py-1 bg-cyberpunk-purple/20 backdrop-blur-sm border border-cyberpunk-purple/30 rounded-full">
-              <p className="text-sm font-medium text-white">Free AI Tools by AiWebTools.Ai • Powered by GPT-4o and DALLE</p>
+              <p className="text-sm font-medium text-white">Free AI Tools by AiWebTools.Ai • Powered by GPT-5 Image Generation</p>
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient-primary leading-tight">
