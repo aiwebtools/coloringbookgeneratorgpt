@@ -2,6 +2,8 @@
 import React from "react";
 import { AlertTriangle, Shield } from "lucide-react";
 
+const AIWEBTOOLS_URL = "https://aiwebtools.lovable.app/?via=aiwebtools";
+
 const DisclaimerSection: React.FC = () => {
   return (
     <section id="disclaimer" className="py-20 relative">
@@ -21,7 +23,7 @@ const DisclaimerSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto glass-card rounded-2xl p-6 md:p-8">
+        <div className="max-w-4xl mx-auto glass-card rounded-2xl p-4 sm:p-6 md:p-8">
           <div className="flex items-start gap-4 mb-6">
             <div className="p-2 bg-cyberpunk-pink/20 rounded-lg flex-shrink-0">
               <AlertTriangle className="w-6 h-6 text-cyberpunk-pink" />
@@ -77,7 +79,7 @@ const DisclaimerSection: React.FC = () => {
             </div>
             
             <p>
-              By using the Coloring Book Generator, you acknowledge that you have read, understood, and agree to these terms. For the full Terms of Service, please visit our <a href="https://aiwebtools.ai/terms-of-services" className="text-cyberpunk-blue hover:text-cyberpunk-purple transition-colors" target="_blank" rel="noopener noreferrer">Terms of Service</a> page.
+              By using the Coloring Book Generator, you acknowledge that you have read, understood, and agree to these terms. For the full Terms of Service, please visit our <a href={AIWEBTOOLS_URL} className="text-cyberpunk-blue hover:text-cyberpunk-purple transition-colors" target="_blank" rel="noopener noreferrer">Terms of Service</a> page.
             </p>
           </div>
           
